@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 
 /* 
+Michael Sizemore
+HW3
+Startup Engineering
+7/11/13
+
  Automatically grade files for the presence of specified HTML tags/attributes.
 Uses commander.js and cheerio. Teaches command line application development and basic DOM parsing.
 
@@ -96,7 +101,6 @@ if(require.main == module) {
         .parse(process.argv);
     if (program.url) {
 	/restle url/
-	    console.log('URL');
 	var response2console = checkUrl(program.checks);
 	rest.get(program.url).on('complete', response2console);
     } else {
